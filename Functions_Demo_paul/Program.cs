@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Functions_Demo_paul
+namespace Functions
 {
     class Program
     {

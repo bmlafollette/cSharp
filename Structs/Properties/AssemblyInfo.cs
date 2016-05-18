@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IntegersWithConditionalsChallenges")]
+[assembly: AssemblyTitle("Structs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IntegersWithConditionalsChallenges")]
+[assembly: AssemblyProduct("Structs")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d37d828c-0579-4719-aa76-81ac1551b918")]
+[assembly: Guid("cdfa2771-6451-4bef-9d48-00a98a637ae1")]
 
 // Version information for an assembly consists of the following four values:
 //

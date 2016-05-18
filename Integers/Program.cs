@@ -10,10 +10,8 @@ namespace Integers
     {
         static void Main(string[] args)
         {
-
-
             /*INTEGERS*/
-            
+
 
             // BASIC OPERATORS TO MEMORIZE NOW - Use these 90% of the time
 
@@ -29,6 +27,9 @@ namespace Integers
             //OPERANDS VERSUS OPERATORS
             // OPERANDS - You define the names of those.
             string myName;
+            myName = "Bobbie";
+            Console.WriteLine("My name is {0}.", myName);
+
 
             int x, y, a, b;
 
@@ -64,13 +65,16 @@ namespace Integers
             // in-line conditional operator - this is cool
             int lj = 23;
             int sc = 30;
+            // Says if lj is equal to 23, then return Lebron James, if not return Steph Curry.
             string jordan = (lj == 23) ? "Lebron James" : "Steph Curry";
             string curry = (sc == 23) ? "Lebron James" : "Steph Curry";
+            Console.WriteLine(jordan);
+            Console.WriteLine(curry);
 
             //String interpolation with a few ints.
             Console.WriteLine("Lebron's number is: {0}", lj);
             Console.WriteLine("Steph's number is: {0}", sc);
-            
+
             //Challenges 
 
             //Bronze call
@@ -87,70 +91,60 @@ namespace Integers
             temperatureOutside = 65;
             PrintOutdoorTemp();
             ShortsCheck();
-            Console.ReadLine();       
+            Console.ReadLine();
         }
 
-            /*
-            BRONZE:
-            Create a variable that is initialized with a normal body temperature. 
-            Print the temperature to the console in degrees fahrenheit. 
-            This number should have a decimal. For example, "98.2". 
-	
-            SILVER: 
-            Create a method that will print body temperature to the console when the method is called. 
-            Your message should read like this: "Your body temperature is currently 98.6 degrees."
-	
-            GOLD: 
-            Discuss the weather in the following way:
-            1. Write a method that prints the current weather to the console.
-            2. Write a method that checks whether or not it would be ok to wear shorts.
-            3. Call both methods. Your console should read something like this:
-                "The temperature outside is currently 65 degrees. 
-                    It would be a great day for shorts"
-	 
+        /*
+        BRONZE:
+        Create a variable that is initialized with a normal body temperature. 
+        Print the temperature to the console in degrees fahrenheit. 
+        This number should have a decimal. For example, "98.2". 
 
-            //REFERENCE: https://msdn.microsoft.com/en-us/library/ms173104.aspx
+        SILVER: 
+        Create a method that will print body temperature to the console when the method is called. 
+        Your message should read like this: "Your body temperature is currently 98.6 degrees."
 
-            */
-            //Possible Answers
-            
-            //Bronze
-            public static float bodyTemp = 98.6f;
-            
-            //Silver
-            public static int temperatureOutside = 64;
+        GOLD: 
+        Discuss the weather in the following way:
+        1. Write a method that prints the current weather to the console.
+        2. Write a method that checks whether or not it would be ok to wear shorts.
+        3. Call both methods. Your console should read something like this:
+            "The temperature outside is currently 65 degrees. 
+                It would be a great day for shorts"
 
-            public static void PrintBodyTemp()
+
+        //REFERENCE: https://msdn.microsoft.com/en-us/library/ms173104.aspx
+
+        */
+        //Possible Answers
+
+        //Bronze
+        public static float bodyTemp = 98.6f;
+
+        //Silver
+        public static int temperatureOutside = 64;
+
+        public static void PrintBodyTemp()
+        {
+            Console.WriteLine("Your body temperature is currently {0}.", bodyTemp);
+        }
+
+        //Gold
+        public static void PrintOutdoorTemp()
+        {
+            Console.WriteLine("The temperature outside is currently {0}.", temperatureOutside);
+        }
+
+        public static void ShortsCheck()
+        {
+            if (temperatureOutside <= 60)
             {
-	            Console.WriteLine("Your body temperature is currently {0}.", bodyTemp);
+                Console.WriteLine("It's cold enough that you should be wearing pants.");
             }
-
-            //Gold
-            public static void PrintOutdoorTemp()
+            else
             {
-	            Console.WriteLine("The temperature outside is currently {0}.", temperatureOutside);
+                Console.WriteLine("You should be ok in shorts.");
             }
-
-            public static void ShortsCheck()
-            {
-            if (temperatureOutside <= 60) {
-	            Console.WriteLine("It's cold enough that you should be wearing pants.");
-            } else {
-	            Console.WriteLine("You should be ok in shorts.");
-	        }
         }
     }
 }
-/*
-            Other options for challenges
-            BRONZE: 
-
-            SILVER: 
-                Using up to 4 different integers(a, b, c, d), show FOIL in the console. (x + y)(x - 7)
-                Print out the answer. 
-
-            GOLD: 
-                Using 4 different integers(a, b, c, d), show four different operations to reach 100 or (e).  
-                Print those operations to the console like this example: "The value of (a + b) * c / d is : 100"
-                Resource: http://www.tutorialspoint.com/csharp/csharp_operators_precedence.htm
-            */

@@ -31,6 +31,8 @@ namespace Types_Nullable_Demo
             //To make a value type nullable, add a question mark.
             int? i = null;
 
+            Console.WriteLine(i);
+
             //Let's say that we don't want to make users answer this on a form.
             //3 answers for Booleans and null:
             //1. IsHappy = true, IsHappy = false, IsHappy = null(did not answer)
